@@ -31,3 +31,6 @@ Thumbs.db
 # Playwright
 test-results/
 playwright-report/
+
+# md
+smartvill.md

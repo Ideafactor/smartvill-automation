@@ -2,11 +2,13 @@ import { Application, Request, Response, NextFunction } from 'express';
 import authRoutes from './authRoutes';
 import tenantRoutes from './tenantRoutes';
 import jobRoutes from './jobRoutes';
+import { createBullBoardRouter } from './bullBoardRoute';
 
 export function registerRoutes(app: Application): void {
   app.use('/api/auth', authRoutes);
   app.use('/api/tenants', tenantRoutes);
   app.use('/api/jobs', jobRoutes);
+  app.use('/admin/bull-board', createBullBoardRouter());
 
   // 404 handler
   app.use((_req: Request, res: Response) => {

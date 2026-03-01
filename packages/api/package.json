@@ -9,6 +9,8 @@
     "start": "node dist/main.js"
   },
   "dependencies": {
+    "@bull-board/express": "^6.20.3",
+    "@bull-board/ui": "^6.20.3",
     "bullmq": "^5.7.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
